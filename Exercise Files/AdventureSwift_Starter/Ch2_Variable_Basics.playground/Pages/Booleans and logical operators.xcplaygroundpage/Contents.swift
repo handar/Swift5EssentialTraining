@@ -14,7 +14,7 @@
  
  */
 // Test variable
-
+var isActive: Bool = false
 
 // Logical operators (!, &&, ||)
 
