@@ -15,17 +15,29 @@
  
  */
 // 1
+var characterName: String = "MyName"
+var weaponClassification: String = "Sword"
 
 // 2
+characterName+=" MyNickname"
 
 // 3
+var currentMana: Double = 0.5
 
 // 4
+var manaPercentage = currentMana / 100
+var manaPercentageString = String(manaPercentage)
 
 // 5
+var debugStats: String = "\(characterName) stats are: \nWeapon: \(weaponClassification) \nCurrent Mana: \(currentMana) \nMana Percentage: \(manaPercentage)"
 
 // 6
+var questAccepted: Bool = true
+var canQuest: Bool = true
 
 // 7
+var questStatus = questAccepted && canQuest
 
 // 8
+debugStats.append(contentsOf: "\nQuesting: \(questStatus)") //add another line to add the quest status
+print(debugStats)
