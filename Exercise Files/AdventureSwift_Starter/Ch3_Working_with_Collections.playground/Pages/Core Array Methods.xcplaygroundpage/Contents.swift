@@ -17,8 +17,9 @@
  
  */
 // Changing & appending items
-
-
+var characterClasses = ["Ranger", "Paladin", "Druid"]
+characterClasses.append("Gunslinger")
+characterClasses+=["Healer", "Berserker"]
 //Inserting and removing items
 
 
