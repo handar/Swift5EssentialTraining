@@ -17,12 +17,25 @@
 
  */
 // Simple tuple
+var uppercutAttack: (String, Int, Bool) = ("Uppercut Smash", 25, true)
 
+uppercutAttack.0 //access value by index
+uppercutAttack.1
+uppercutAttack.2
 
+//unpack uppercut
+var (attack, damage, rechargeable) = uppercutAttack
 
+//you don't need to call the indexes anymore, you can just call the variable assigned uppercutAttack
+attack
+damage
+rechargeable
 
-// Naming tuple values
-
+// Naming tuple values, we modifieid the types to actually have a var attached to them
+// Naming tuple values literally
+var planetSmash = (name: "Planet Smash", damage: 45, rechargeable: true)
+planetSmash.rechargeable
 
 // Naming values with type annotation
-
+var shieldStomp: (name: String, damage: Int, rechargeable: Bool)
+shieldStomp.damage = 100
